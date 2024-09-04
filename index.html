@@ -8,46 +8,57 @@
     </head>
 
     <body>
-        <div class="left">
-            <h1 id="title">Title</h1>
-            <p id="description">Description</p>
+        <div class="block">
+            <div class="left">
+                <h1 id="title">Hello.</h1>
+                <p id="description">This is a form for nothing in particular.</p>
+            </div>
+            <form id="survey-form" method="get">
+                <label id="email-label" for="email">E-mail:</label>
+                <input id="email" type="email" name="email" placeholder="Enter e-mail address" required>
+                <br />
+                <label id="name-label" for="name">Full name:</label>
+                <input id="name" type="text" name="name" placeholder="Enter full name" required>
+                <br />
+                <label id="number-label" for="age">Age:</label>
+                <input id="number" type="number" name="age" min="18" max="80" placeholder="00">
+                <br />
+                <label for="birthday">Birthday:</label>
+                <input type="date" name="date" min="2024-08-01" max="2025-09-30">
+                <br />
+                <label for="gender">Gender:</label>
+                <input type="radio" name="gender" value="male"> Male
+                <input type="radio" name="gender" value="female"> Female
+                <input type="radio" name="gender" value="other"> Other
+                <br />
+                <label for="favecolor">How are you feeling today?:</label>
+                <input type="checkbox" name="favecolor" value="good">Good
+                <input type="checkbox" name="favecolor" value="bad">Bad
+                <input type="checkbox" name="favecolor" value="both">Both
+                <input type="checkbox" name="favecolor" value="all">All of the Above
+                <br />
+                <label for="pizza">Favorite Pizza Topping:</label>
+                <select id="dropdown" name="pizza">
+                    <option selected disabled>Choose option</option>
+                    <option value="cheese">Cheese</option>
+                    <option value="meat">Pepperoni/Meat</option>
+                    <option value="seafood">Seafood</option>
+                    <option value="veggies">Vegetables</option>
+                    <option value="pineapple" disabled>Pineapple</option>
+                </select>
+                <br />
+                <label for="pizza">Who would you choose to narrate your life:</label>
+                <select id="dropdown" name="narrator">
+                    <option selected disabled>Choose option</option>
+                    <option value="correct">Morgan Freeman</option>
+                    <option value="wrong" disabled>Anyone else is wrong</option>
+                </select>
+                <br />
+                <label for="comments">Comments/Suggestions:</label>
+                <textarea name="comments" maxlength="400" rows="8" cols="50" placeholder="Put what you want, I probably won't read it." required></textarea>
+                <br />
+                <input type="submit" value="Confirm">
+            </form>
         </div>
-        <form id="survey-form" method="get">
-            <label id="email-label" for="email">E-mail:</label>
-            <input id="email" type="email" name="email" placeholder="Enter e-mail address" required>
-            <br />
-            <label id="name-label" for="name">Full name:</label>
-            <input id="name" type="text" name="name" placeholder="Enter full name" required>
-            <br />
-            <label id="number-label" for="age">Age:</label>
-            <input id="number" type="number" name="age" min="18" max="80" placeholder="00">
-            <br />
-            <label for="birthday">Birthday:</label>
-            <input type="date" name="date" min="2024-08-01" max="2025-09-30">
-            <br />
-            <label for="gender">Gender:</label>
-            <input type="radio" name="gender" value="male"> Male
-            <input type="radio" name="gender" value="female"> Female
-            <input type="radio" name="gender" value="other"> Other
-            <br />
-            <label for="favecolor">Favorite color/s:</label>
-            <input type="checkbox" name="favecolor" value="red">Red
-            <input type="checkbox" name="favecolor" value="green">Green
-            <input type="checkbox" name="favecolor" value="blue">Blue
-            <br />
-            <label for="dessert">Favorite Dessert:</label>
-            <select id="dropdown" name="dessert">
-                <option selected disabled>Choose option</option>
-                <option value="icecream">Ice cream</option>
-                <option value="pudding">Pudding</option>
-                <option value="chocolate">Chocolate</option>
-                <option value="cake">Cake</option>
-            </select>
-            <br />
-            <label for="comments">Comments/Suggestions:</label>
-            <textarea name="comments" maxlength="400" rows="8" cols="50" required></textarea>
-            <br />
-            <input type="submit" value="Confirm">
-        </form>
     </body>
 </html>
