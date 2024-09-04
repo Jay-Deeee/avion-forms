@@ -12,6 +12,10 @@
             <div class="left">
                 <h1 id="title">Hello.</h1>
                 <p id="description">This is a form for nothing in particular.</p>
+                <figure>
+                    <img src="./images/cat.jpg" />
+                    <figcaption class="img-caption">Here's an unrelated photo of a cat for no apparent reason.</figcaption>
+                </figure>
             </div>
             <form id="survey-form" class="container" method="get">
                 <label id="email-label" for="email">E-mail:</label>
@@ -24,7 +28,7 @@
                 <input id="number" class="input" type="number" name="age" min="18" max="80" placeholder="00">
                 <br />
                 <label for="birthday">Birthday:</label>
-                <input id="birthday" class="input" type="date" name="date" min="2024-08-01" max="2025-09-30">
+                <input id="birthday" class="input" type="date" name="date" max="2024-09-04">
                 <br />
                 <label for="gender">Gender:</label>
                 <input class="radio" type="radio" name="gender" value="male"> Male
@@ -38,7 +42,7 @@
                 <input class="radio" type="checkbox" name="favecolor" value="all">All of the Above
                 <br />
                 <label for="pizza">Favorite Pizza Topping:</label>
-                <select class="dropdown" name="pizza">
+                <select class="dropdown margin" name="pizza">
                     <option selected disabled>Choose option</option>
                     <option value="cheese">Cheese</option>
                     <option value="meat">Pepperoni/Meat</option>
@@ -48,14 +52,14 @@
                 </select>
                 <br />
                 <label for="pizza">Who would you choose to narrate your life:</label>
-                <select class="dropdown" name="narrator">
+                <select class="dropdown margin" name="narrator">
                     <option selected disabled>Choose option</option>
                     <option value="correct">Morgan Freeman</option>
                     <option value="wrong" disabled>Anyone else is wrong</option>
                 </select>
                 <br />
                 <label for="comments">Comments/Suggestions:</label>
-                <textarea class="input" name="comments" maxlength="400" rows="8" cols="50" placeholder="Put what you want, I probably won't read it." required></textarea>
+                <textarea class="input margin" name="comments" maxlength="400" rows="8" cols="50" placeholder="Put what you want, I probably won't read it." required></textarea>
                 <br />
                 <input class="button" type="submit" value="Confirm">
             </form>
