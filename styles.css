@@ -11,3 +11,46 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
 }
+
+.input {
+    padding: 8px;
+    display: block;
+    border: 1px solid #ccc;
+    width: 70%;
+}
+
+#number {
+    width: 8%;
+}
+
+#birthday {
+    width: 20%;
+}
+
+.radio {
+    width: 18px;
+    height: 24px;
+    position: relative;
+    top: 6px;
+}
+
+.dropdown {
+    width: 20%;
+    height: 24px;
+    top: 6px;
+}
+
+.button {
+    font-size: 16px;
+    width: 80px;
+    height: 32px;
+    background: transparent;
+    border: 2px solid #000000;
+    border-radius: 20px;
+}
+
+.button:hover {
+    color: #ffffff;
+    background-color: #786f80;
+    border: 0px;
+}
