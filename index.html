@@ -8,23 +8,27 @@
     </head>
 
     <body>
-        <form method="get">
-            <label for="firstname">First name:</label>
-            <input type="text" name="firstname" placeholder="Enter first name" required>
+        <div class="left">
+            <h1 id="title">Title</h1>
+            <p id="description">Description</p>
+        </div>
+        <form id="survey-form" method="get">
+            <label id="email-label" for="email">E-mail:</label>
+            <input id="email" type="email" name="email" placeholder="Enter e-mail address" required>
             <br />
-            <label for="lastname">Last name:</label>
-            <input type="text" name="lastname" placeholder="Enter last name" required>
+            <label id="name-label" for="name">Full name:</label>
+            <input id="name" type="text" name="name" placeholder="Enter full name" required>
             <br />
-            <label for="age">Age:</label>
-            <input type="number" name="age" min="18" max="60">
+            <label id="number-label" for="age">Age:</label>
+            <input id="number" type="number" name="age" min="18" max="80" placeholder="00">
             <br />
             <label for="birthday">Birthday:</label>
             <input type="date" name="date" min="2024-08-01" max="2025-09-30">
             <br />
-            <label for="condition">Do you agree with the conditions?</label>
-            <input type="radio" name="condition" value="yes"> Yes
-            <input type="radio" name="condition" value="no"> No
-            <input type="radio" name="condition" value="maybe"> Maybe
+            <label for="gender">Gender:</label>
+            <input type="radio" name="gender" value="male"> Male
+            <input type="radio" name="gender" value="female"> Female
+            <input type="radio" name="gender" value="other"> Other
             <br />
             <label for="favecolor">Favorite color/s:</label>
             <input type="checkbox" name="favecolor" value="red">Red
@@ -32,7 +36,7 @@
             <input type="checkbox" name="favecolor" value="blue">Blue
             <br />
             <label for="dessert">Favorite Dessert:</label>
-            <select name="dessert">
+            <select id="dropdown" name="dessert">
                 <option selected disabled>Choose option</option>
                 <option value="icecream">Ice cream</option>
                 <option value="pudding">Pudding</option>
@@ -40,14 +44,8 @@
                 <option value="cake">Cake</option>
             </select>
             <br />
-            <label for="address">Address:</label>
-            <textarea name="address" maxlength="150" rows="5" cols="30" required></textarea>
-            <br />
-            <label for="email">Email:</label>
-            <input type="email" name="email" required>
-            <br />
-            <label for="password">Password:</label>
-            <input type="password" name="password" minlength="8" required>
+            <label for="comments">Comments/Suggestions:</label>
+            <textarea name="comments" maxlength="400" rows="8" cols="50" required></textarea>
             <br />
             <input type="submit" value="Confirm">
         </form>
